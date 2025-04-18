@@ -1,5 +1,5 @@
 build:
-	nix build .#nixosConfigurations.Victor-Server.config.system.build.image
+	nix build path:.#nixosConfigurations.Victor-Server.config.system.build.image
 
 flash DISK:
 	cat result/*.img > {{DISK}}
