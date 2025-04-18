@@ -2,10 +2,8 @@
 
 {
   imports = [
-    "${modulesPath}/virtualisation/disk-image.nix"
+    ./disko.nix
   ];
-
-  image.format = "raw";
 
   hardware.enableRedistributableFirmware = true;
 
